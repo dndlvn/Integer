@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="15dp"
+                app:srcCompat="@drawable/logo_integer" />
+
+            <TextView
+                android:id="@+id/userName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/imageView"
+                android:layout_toStartOf="@id/imageView2"
+                android:layout_marginStart="16dp"
+                android:text="Тестов Т.Т."
+                android:textColor="#000000"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/roleUserName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/userName"
+                android:layout_alignStart="@id/userName"
+                android:text="Разработчик"
+                android:textColor="#818181"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="16dp"
+                app:srcCompat="@drawable/icon_integer" />
+
+        </RelativeLayout>
+
+
+        <View
+            android:id="@+id/topDivider"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="#D9D9D9" />
+
+
+        <LinearLayout
+            android:id="@+id/buttonBlock"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="Уведомления"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                app:backgroundTint="#19B6FF"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="16dp"
+                android:text="Задачи"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                app:backgroundTint="#19B6FF"
+                app:cornerRadius="16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Профиль"
+                android:textColor="@android:color/white"
+                android:textSize="30sp"
+                android:layout_margin="10dp"
+                app:backgroundTint="#19B6FF"
+                app:cornerRadius="16dp" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="80dp"
+            android:text="Выйти"
+            android:textColor="@android:color/black"
+            android:textSize="24sp"
+            app:backgroundTint="#FFFFFF"
+            app:cornerRadius="16dp"
+            app:strokeColor="#19B6FF"
+            app:strokeWidth="5dp" />
+
+    </LinearLayout>
+
+</ScrollView>
